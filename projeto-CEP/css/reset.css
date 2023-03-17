@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    max-height: 100vh;
+}

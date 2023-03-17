@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página inicial do hermozotovisk" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Hermozotovisk - Home</title>
+  </head>
+  <body>
+    <div class="grid-layout">
+      <div class="modal-container">
+        <form action="" class="produto-modal">
+          <span class="close-button">X</span>
+          <label for="produtoNome">Como o produto se chama?</label>
+          <input
+            type="text"
+            name="produtoNome"
+            id="produtoNome"
+            placeholder="Digite o nome"
+            required
+          />
+          <label for="produtoPreco">Qual o valor do produto?</label>
+          <input
+            type="number"
+            name="produtoPreco"
+            id="produtoPreco"
+            placeholder="Digite o preço"
+            required
+          />
+          <label for="produtoCategoria">A qual categoria ele pertence?</label>
+          <input
+            type="text"
+            name="produtoCategoria"
+            id="produtoCategoria"
+            placeholder="Digite a categoria"
+            required
+          />
+          <label for="produtoQuantidade"
+            >Qual a quantidade disponível para venda?</label
+          >
+          <input
+            type="number"
+            name="produtoQuantidade"
+            id="produtoQuantidade"
+            placeholder="Digite a quantidade"
+            required
+          />
+          <label for="produtoDescricao"
+            >Dê uma descrição legal para seu produto</label
+          >
+          <textarea
+            type="text"
+            name="produtoDescricao"
+            id="produtoDescricao"
+            cols="40"
+            rows="20"
+            placeholder="Uma descrição legal aqui"
+            required
+          ></textarea>
+          <div class="form-actions">
+            <button type="button" class="btn-cancelar">Cancelar</button>
+            <button type="button" class="btn-adicionar modal-adicionar">
+              Cadastrar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-container-editar">
+        <form action="" class="produto-modal-editar">
+          <span class="close-button editar">X</span>
+          <label for="produtoNome">Editar o nome?</label>
+          <input
+            type="text"
+            name="produtoNome"
+            id="produtoNomeEditar"
+            placeholder="Digite o nome"
+            required
+          />
+          <label for="produtoPreco">Editar o valor?</label>
+          <input
+            type="number"
+            name="produtoPreco"
+            id="produtoPrecoEditar"
+            placeholder="Digite o preço"
+            required
+          />
+          <label for="produtoCategoria">Editar a categoria?</label>
+          <input
+            type="text"
+            name="produtoCategoria"
+            id="produtoCategoriaEditar"
+            placeholder="Digite a categoria"
+            required
+          />
+          <label for="produtoQuantidade">Editar a quantidade?</label>
+          <input
+            type="number"
+            name="produtoQuantidade"
+            id="produtoQuantidadeEditar"
+            placeholder="Digite a quantidade"
+            required
+          />
+          <label for="produtoDescricao">Editar a descrição?</label>
+          <textarea
+            type="text"
+            name="produtoDescricao"
+            id="produtoDescricaoEditar"
+            cols="40"
+            rows="20"
+            placeholder="Uma descrição legal aqui"
+            required
+          ></textarea>
+          <div class="form-actions">
+            <button type="button" class="btn-cancelar editar">Cancelar</button>
+            <button type="button" class="btn-adicionar modal-editar">
+              Editar
+            </button>
+          </div>
+        </form>
+      </div>
+      <header class="header-container">
+        <nav>
+          <span class="menu-title">menu</span>
+          <ul class="header-menu">
+            <li><a href="" class="nav-item cadastro">Cadastros</a></li>
+            <ul class="sub-menu cadastro">
+              <li>
+                <a href="./cadastrarProdutos.html" class="sub-nav-item"
+                  >Produtos</a
+                >
+              </li>
+              <li><a href="" class="sub-nav-item">Categorias</a></li>
+              <li><a href="" class="sub-nav-item">Clientes</a></li>
+            </ul>
+            <li><a href="" class="nav-item relatorios">Relatórios</a></li>
+            <ul class="sub-menu relatorios">
+              <li><a href="" class="sub-nav-item">Produtos</a></li>
+              <li><a href="" class="sub-nav-item">Clientes</a></li>
+            </ul>
+            <li><a href="" class="nav-item exclusao">Exclusão</a></li>
+            <ul class="sub-menu exclusao">
+              <li><a href="" class="sub-nav-item">Produtos</a></li>
+              <li><a href="" class="sub-nav-item">Clientes</a></li>
+            </ul>
+          </ul>
+          <div class="logout">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <span class="active-name nav-item">Gustavo</span>
+            <a href="../index.html" class="nav-item logout-link">Sair</a>
+          </div>
+        </nav>
+      </header>
+      <main class="home-content">
+        <form action="" id="formulario-buscarProduto">
+          <input
+            type="text"
+            name="pesquisarProduto"
+            id="pesquisarProduto"
+            placeholder="Pesquisar produtos"
+          />
+          <button type="button" class="btn-busca">Pesquisar</button>
+        </form>
+
+        <section class="crud-list">
+          <div class="crud-actions">
+            <button type="button" class="btn-adicionar">
+              Adicionar Produto
+            </button>
+          </div>
+
+          <div>
+            <ul class="crud-header">
+              <li>id</li>
+              <li>nome</li>
+              <li>preco</li>
+              <li>categoria</li>
+              <li>quantidade</li>
+              <li>descrição</li>
+            </ul>
+            <div class="crud-list-items">
+              <!-- <ul class="crud-content">
+              <li>01</li>
+              <li>Teclado Kumara Redragon</li>
+              <li>R$299,00</li>
+              <li>Teclado</li>
+              <li>12</li>
+              <li>Teclado iluminado RGB</li>
+              <span class="btn-editar material-symbols-outlined">edit</span>
+              <span class="btn-excluir material-symbols-outlined">delete</span>
+            </ul> -->
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>
+          Este website foi desenvolvido com ❤️ pelo time da Los Galos Calientes
+          Sistemas © 2022-2023
+        </p>
+      </footer>
+    </div>
+    <script type="module" src="../app.js"></script>
+  </body>
+</html>

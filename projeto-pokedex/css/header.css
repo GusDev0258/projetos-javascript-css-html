@@ -1,0 +1,48 @@
+.header-container{
+    padding: 1.5rem;
+    background: linear-gradient(to left,#313131, #343434 );
+}
+.header-content{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+#procurar-pokemon{
+    width: 400px;
+    height: 2rem;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+    outline-color: #FDE74C;
+}
+.btn-pesquisar{
+    background-color: #DA471B;
+    color: #fff;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn-pesquisar:hover{
+    background-color: rgb(175, 57, 21);
+}
+@media(max-width: 720px){
+    .header-content{
+        justify-content: center;
+    }
+}
+@media(max-width: 520px){
+    #procurar-pokemon{
+        width: 300px;
+    }
+}
+@media(max-width: 420px){
+    #procurar-pokemon{
+        width: 220px;
+    }
+}

@@ -1,0 +1,19 @@
+.content{
+    max-width: 100vw;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    background-color: #63BC5A;
+}
+@media(max-width: 1200px){
+    .content{
+    grid-template-columns: 1fr;
+}
+
+@media(max-width: 650px){
+    .content{
+        height: 1200px;
+        grid-template-rows: 300px 400px 400px;
+    }
+}
+}

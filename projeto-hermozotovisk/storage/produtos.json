@@ -1,0 +1,45 @@
+{
+    "Produtos":[
+        {
+            "id": 2,
+            "name": "Teclado Gamer",
+            "price": 190,
+            "category": "Teclado",
+            "quantity": 10,
+            "description": "Teclado muito bom, blue switch"
+        },
+        {
+            "id": 3,
+            "name": "Mouse Razer Gamer",
+            "price": 340,
+            "category": "Mouse",
+            "quantity": 20,
+            "description": "Mouse muito bom, 10000 dpi RGB"
+        },
+        {
+            "id": 4,
+            "name": "Mouse HyperX Gamer",
+            "price": 230,
+            "category": "Mouse",
+            "quantity": 5,
+            "description": "Mouse muito bom"
+        },
+        {
+            "id": 5,
+            "name": "Monitor Gamer",
+            "price": 1300,
+            "category": "Monitor",
+            "quantity": 9,
+            "description": "Monitor muito bom, 244hz ultra full hd 4k"
+        },
+        {
+            "id": 6,
+            "name": "Microfone Ax0",
+            "price": 800,
+            "category": "Microfone",
+            "quantity": 18,
+            "description": "Super microfone profissional foda"
+        }
+
+    ]
+}

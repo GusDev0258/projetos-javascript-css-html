@@ -1,0 +1,14 @@
+.pokemon-image img.anima{
+    animation: animacaoImagem 0.8s ease-in forwards;
+}
+
+@keyframes animacaoImagem{
+    from{
+        opacity: 0;
+        transform: scale3d(10%,10%,10%);
+    }
+    to{
+        opacity: 100;
+        transform: scale3d(100%,100%,100%);
+    }
+}
